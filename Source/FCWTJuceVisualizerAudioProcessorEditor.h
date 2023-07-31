@@ -9,7 +9,7 @@
 #pragma once
 
 #include <JuceHeader.h>
-#include "PluginProcessor.h"
+#include "FCWTJuceVisualizerAudioProcessor.h"
 
 //==============================================================================
 /**
@@ -17,7 +17,8 @@
 class FCWTJuceVisualizerAudioProcessorEditor  : public juce::AudioProcessorEditor
 {
 public:
-    FCWTJuceVisualizerAudioProcessorEditor (FCWTJuceVisualizerAudioProcessor&);
+    FCWTJuceVisualizerAudioProcessorEditor (FCWTJuceVisualizerAudioProcessor& p);
+
     ~FCWTJuceVisualizerAudioProcessorEditor() override;
 
     //==============================================================================
