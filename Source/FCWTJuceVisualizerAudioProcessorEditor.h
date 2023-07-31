@@ -9,6 +9,10 @@
 #pragma once
 
 #include <JuceHeader.h>
+
+// Forward declaration of FCWTJuceVisualizerAudioProcessor
+class FCWTJuceVisualizerAudioProcessor;
+
 #include "FCWTJuceVisualizerAudioProcessor.h"
 
 //==============================================================================

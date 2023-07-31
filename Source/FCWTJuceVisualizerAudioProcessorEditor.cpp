@@ -6,12 +6,12 @@
   ==============================================================================
 */
 
+#include "FCWTJuceVisualizerAudioProcessorEditor.h"
 #include "FCWTJuceVisualizerAudioProcessor.h"
-#include "PluginEditor.h"
 
 //==============================================================================
 FCWTJuceVisualizerAudioProcessorEditor::FCWTJuceVisualizerAudioProcessorEditor (FCWTJuceVisualizerAudioProcessor& p)
-    : AudioProcessorEditor (&p), processor (p)
+    : AudioProcessorEditor (&p), audioProcessor (p)
 {
     // ...
     // Make sure that before the constructor has finished, you've set the
