@@ -22,7 +22,11 @@ C++17 compiler (GCC 10+, Clang or Microsoft Visual C++ 15.7+);
 FFTW >=3.3 (if you choose to use own FFTW installation)
 OpenMP >=5
 
-I had to add libomp and fftw3 includes to "header search paths" (installed both via brew) and add their libary paths via "library search paths". I had to add fCWT library via "Link binary with libraries".
+Header paths in Projucer are added keeping in mind it's for OSX and brew:
+/opt/homebrew/opt/libomp/include
+/opt/homebrew/Cellar/fftw/3.3.10_1/include
+
+Works now at 2 august 2023.
 
 ### Also, from their installation section:
 Please note that you'll need to configure FFTW to use OpenMP for multithreading and 256-bit vector instructions (e.g., AVX) to obtain comparable results to the benchmark. Standard configuration binaries obtained via brew or apt-get generally don't have AVX enabled.
